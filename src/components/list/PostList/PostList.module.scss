@@ -1,0 +1,56 @@
+.post-list {
+    .post-item {
+        padding: 1.5rem;
+        transition: all .15s ease-in;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0;
+        color: gray;
+
+        a {
+            transition: all .15s ease-in;
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            color: blue;
+            border-bottom: 1px solid blue;
+        }
+    }
+
+    .date {
+        font-size: 0.85rem;
+        color: gray;
+    }
+
+    p {
+        font-weight: 300;
+        color: gray;
+    }
+
+    .tags {
+        font-size: 0.85rem;
+        color: blue;
+        a {
+            &:hover {
+                color: skyblue;
+                text-decoration: underline;
+            }
+
+            a + a {
+                margin-left: 0.25rem;
+            }
+        }
+
+        &:hover {
+            background: rgba(blue, 0.05)
+        }
+    }
+
+    .post-item + .post-item {
+        border-top: 1px solid gray
+    }
+}

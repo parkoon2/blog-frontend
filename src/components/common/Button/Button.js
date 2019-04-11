@@ -7,7 +7,7 @@ const cx = classNames.bind(styles)
 const Div = ({children, ...rest}) => <div {...rest}>{children}</div>
 
 const Button = ({children, to, onClick, disabled, theme='default'}) => {
-
+    console.log('disabled', disabled, theme)
     const Element = to ? Link : Div
 
     return (

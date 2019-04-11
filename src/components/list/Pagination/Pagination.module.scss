@@ -1,0 +1,13 @@
+.pagination {
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    .number {
+        font-size: 0.85rem;
+        text-align: center;
+        color: gray;
+        flex: 1 // 남은 공간을 다 차지
+    }
+}
