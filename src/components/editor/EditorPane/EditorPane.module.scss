@@ -1,0 +1,29 @@
+@import '../../../styles/utils.scss';
+
+.editor-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        background: gray;
+        border: none;
+        outline: none;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 500;
+        &::placeholder {
+            color: rgba(255,255,255,0.75)
+        }
+    
+    }
+    .code-editor {
+        background: #331138;
+        flex: 1;
+    }
+
+    .tags {
+        padding-left
+    }
+}
