@@ -1,0 +1,57 @@
+.button {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+
+    &.default {
+        background: blue;
+        &:hover {
+            background: blueviolet;
+        }
+        &:active {
+            background: blue;
+        }
+    }
+
+    &.gray {
+        background: gray;
+        &:hover {
+            background: whitesmoke;
+        }
+        &:active {
+            background: gray;
+        }
+    }
+
+    &.outline {
+        border: 2px solid white;
+        border-radius: 2px;
+        &:hover {
+            background: white;
+            color: blue;
+        }
+
+        &:active {
+            background: rgba(255,255,255,0.85);
+            border: 2px solid rgba(255,255,255,0.85)
+        }
+    }
+
+    &.disabled {
+        background: gray;
+        color: whitesmoke;
+        cursor: default;
+        &:hover, &:active {
+            box-shadow: none;
+            background: gray;
+        }
+    }
+
+}

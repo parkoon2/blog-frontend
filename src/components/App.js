@@ -13,7 +13,6 @@ const App = () => {
                 <Route path="/post/:id" component={PostPage} />
                 <Route path="/editor" component={EditorPage} />
                 <Route component={NotFoundPage} />
-
             </Switch>
         </div>
     )
