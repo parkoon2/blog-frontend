@@ -20,5 +20,14 @@
             cursor: col-resize;
             transform: translate(-50%)
         }
+
+        @include media("<medium") {
+            .editor {
+                flex: 1!important;
+            }
+            .preview, .separator {
+                display: none;
+            }
+        }
     }
 }
